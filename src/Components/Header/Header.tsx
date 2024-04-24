@@ -1,8 +1,11 @@
-// ^ HEADER COMPONENT
+//^ HEADER COMPONENT
+import { Button } from "../ui/button"
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <Button>Click me</Button>
+    </div>
   )
 }
 

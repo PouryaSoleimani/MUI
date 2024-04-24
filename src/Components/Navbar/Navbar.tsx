@@ -13,8 +13,7 @@ const Navbar = () => {
     const drawerWidth = 220;
 
     return (
-        <div >
-
+        <div className='absolute left-0 top-0 z-50'>
             <Drawer sx={{ width: drawerWidth, height: "100%", flexShrink: 0, '& .MuiDrawer-paper': { width: drawerWidth, boxSizing: 'border-box', }, }} variant="permanent" anchor="left" >
                 <h1 className='bg-black px-2 py-4 text-white font-bold text-2xl'>DASHBOARD</h1>
                 <Divider />
