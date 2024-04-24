@@ -2,7 +2,7 @@ import Header from "../Header/Header"
 
 const Main = () => {
   return (
-    <div>
+    <div className="flex items-start justify-center w-full">
       <Header />
     </div>
   )
