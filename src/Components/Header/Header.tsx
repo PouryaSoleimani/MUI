@@ -1,4 +1,4 @@
-
+// ^ HEADER COMPONENT
 
 const Header = () => {
   return (
