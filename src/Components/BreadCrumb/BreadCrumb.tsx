@@ -1,3 +1,4 @@
+//^ BREADCRUMB COMPONENT
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 
 export default function BreadCrumb() {
