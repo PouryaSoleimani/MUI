@@ -4,7 +4,7 @@ type CardItemProps = { title: string, count: string, album: string, img: string 
 
 export default function CardItem({ title, count, album, img }: CardItemProps) {
     return (
-        <Card className="bg-black/80 rounded-xl pb-20 text-zinc-100 hover:scale-105 cursor-pointer duration-500" isHoverable shadow="lg" isFooterBlurred isBlurred>
+        <Card className="bg-black/80 rounded-xl pb-20 text-zinc-100 hover:scale-105 cursor-pointer duration-500 max-w-fit" isHoverable shadow="lg" isFooterBlurred isBlurred>
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{title}</p>
                 <small className="text-default-500">{count}</small>
