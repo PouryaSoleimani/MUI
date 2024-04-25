@@ -1,6 +1,5 @@
 //^ HEADER COMPONENT
 import { Avatar, Button } from "@nextui-org/react";
-import { Divider } from "@nextui-org/react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem } from "@nextui-org/react";
 import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import { ChevronDown, HeartHandshake, LayoutGrid, LineChart, Scaling, Zap } from "lucide-react";
@@ -10,10 +9,10 @@ const Header = () => {
 
 
   return (
-    <div className="bg-black w-full h-16 border-b-2 space-x-5 border-white my-0 py-2 pl-[15rem] flex items-center justify-between pr-10">
+    <div className="bg-black w-full h-16 border-b-2 space-x-5 border-white my-0 py-2 pl-[14rem]  flex items-center justify-between pr-14">
       {/*//* USERS */}
       <div className="flex gap-4 items-center">
-        <h1 className="text-white font-bold px-2 tracking-tighter w-[6.7rem]">TRENDINGS :</h1>
+        <h1 className="text-white font-bold px-2 tracking-tighter w-[7rem]">TRENDINGS :</h1>
         <Avatar className="cursor-pointer hover:scale-110 duration-300" isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
         <Avatar className="cursor-pointer hover:scale-110 duration-300" isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
         <Avatar className="cursor-pointer hover:scale-110 duration-300" isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
@@ -23,7 +22,7 @@ const Header = () => {
       </div>
 
       {/*//* NAVBAR */}
-      <Navbar shouldHideOnScroll className="bg-transparent text-white font-bold">
+      <Navbar shouldHideOnScroll isBlurred={false} className="bg-transparent text-white font-bold">
         <NavbarContent className="hidden sm:flex gap-6" justify="center">
 
           {/*//* DROPDOWN */}
@@ -59,7 +58,7 @@ const Header = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#" className="text-white hover:text-[#80ff00] font-extrabold"><LoginBTN/></Link>
+            <Link href="#" className="text-white hover:text-[#80ff00] font-extrabold"><LoginBTN /></Link>
           </NavbarItem>
         </NavbarContent>
       </Navbar>

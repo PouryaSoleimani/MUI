@@ -2,8 +2,8 @@ import CardItem from './CardItem'
 
 const CardsContainer = () => {
     return (
-        <div className='flex items-center justify-center pl-[16rem] py-10'>
-            <span className='grid grid-cols-5 gap-10'>
+        <div className='flex items-center justify-center pl-[16rem] py-10 pr-8'>
+            <span className='grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-full gap-10'>
                 <CardItem title={"DAILY MIX"} count={"12 TRACKS"} album={"FRONTEND RADIO"} img='/public/images/hero-card-complete.jpeg' />
                 <CardItem title={"JAZZ MIX"} count={"12 TRACKS"} album={"FRONTEND RADIO"} img='/public/images/musicCover2.jpg' />
                 <CardItem title={"TECHNO MIX"} count={"12 TRACKS"} album={"FRONTEND RADIO"} img='/public/images/musicCover3.jpg' />
