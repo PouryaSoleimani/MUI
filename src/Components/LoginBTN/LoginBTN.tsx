@@ -25,8 +25,8 @@ export default function LoginBTN() {
                             </ModalBody>
 
                             <ModalFooter>
-                                <Button className="bg-rose-600/70 text-rose-950 font-semibold p-4 text-md  tracking-tighter rounded-xl" onPress={onClose}> Close</Button>
-                                <Button className="bg-emerald-600/70 text-emerald-950 font-semibold p-4 text-md  tracking-tighter rounded-xl" onPress={onClose}> SignUp</Button>
+                                <Button className="bg-rose-600/70 text-white font-semibold h-fit p-4 text-md  tracking-tighter rounded-xl" onPress={onClose}> Close</Button>
+                                <Button className="bg-emerald-600/70 text-white font-semibold p-4 h-fit text-md  tracking-tighter rounded-xl" onPress={onClose}> SignUp</Button>
 
                             </ModalFooter>
                         </>
