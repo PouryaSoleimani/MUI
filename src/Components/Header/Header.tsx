@@ -9,9 +9,9 @@ const Header = () => {
 
 
   return (
-    <div className="bg-black w-full h-16 border-b-2 space-x-5 border-white my-0 py-2 pl-[14rem]  flex items-center justify-between pr-14">
+    <div className="bg-black w-full h-16 border-b-2 space-x-5 border-white my-0 py-2 sm:pl-[14rem] md:pl-[16rem]  flex items-center justify-between pr-14">
       {/*//* USERS */}
-      <div className="flex gap-4 items-center">
+      <div className="hidden gap-4 items-center xl:flex">
         <h1 className="text-white font-bold px-2 tracking-tighter w-[7rem]">TRENDINGS :</h1>
         <Avatar className="cursor-pointer hover:scale-110 duration-300" isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
         <Avatar className="cursor-pointer hover:scale-110 duration-300" isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
@@ -23,10 +23,10 @@ const Header = () => {
 
       {/*//* NAVBAR */}
       <Navbar shouldHideOnScroll isBlurred={false} className="bg-transparent text-white font-bold">
-        <NavbarContent className="hidden sm:flex gap-6" justify="center">
+        <NavbarContent className="flex gap-4 items-center" justify="center">
 
           {/*//* DROPDOWN */}
-          <Dropdown>
+          <Dropdown >
             <NavbarItem>
               <DropdownTrigger><Button disableRipple className="p-0 bg-transparent data-[hover=true]:bg-transparent text-white font-extrabold" radius="sm" variant="shadow" endContent={<ChevronDown size={28} color="#0080ff" strokeWidth={2.5} />}> Features</Button></DropdownTrigger>
             </NavbarItem>
@@ -50,7 +50,8 @@ const Header = () => {
           </Dropdown>
 
           {/* //* NAVBAR LINKS */}
-          <NavbarItem isActive> <Link href="#" aria-current="page" className="text-white font-extrabold">Customers</Link>
+          <NavbarItem isActive>
+            <Link href="#" aria-current="page" className="text-white font-extrabold">Customers</Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#" className="text-white font-extrabold"> Integrations</Link>
@@ -63,10 +64,12 @@ const Header = () => {
         </NavbarContent>
       </Navbar>
       {/* //* NAVBAR DROPDOWN */}
-      <Dropdown>
-        <DropdownTrigger>
+      <Dropdown >
+        <DropdownTrigger className="hidden md:flex">
           <Button color='secondary' variant="shadow" className="capitalize  font-bold rounded-md hover:scale-110 duration-500" > MENU </Button>
         </DropdownTrigger>
+
+
         <DropdownMenu aria-label="Static Actions" className="bg-zinc-300 font-extrabold border-b-8 border-black">
           <DropdownItem className="font-bold hover:bg-black hover:text-white" key="new">New file</DropdownItem>
           <DropdownItem className="font-bold hover:bg-black hover:text-white" key="copy">Copy link</DropdownItem>
