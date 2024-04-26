@@ -27,7 +27,7 @@ export default function LoginBTN() {
                             </ModalFooter>
                         </>
                     )}
-                </ModalContent> 
+                </ModalContent>
             </Modal>
         </>
     );
